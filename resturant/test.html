@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Document</title>
+    <style>
+        /* header 1 start */
+
+        @media (max-width: 768px) {
+            .header {
+                margin-top: 100px;
+                /* Adjust margin for smaller screens */
+            }
+
+            .col-lg-8 {
+                width: 100%;
+                /* Make the column full width on smaller screens */
+                margin: 0;
+                /* Remove offset on smaller screens */
+            }
+
+            .col-md-3 {
+                width: 100%;
+                /* Make the column full width on smaller screens */
+                margin: 0;
+                /* Remove margin on smaller screens */
+            }
+
+            /* Add more responsive styles as needed */
+        }
+
+        /* header 2 end */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 767px) {
+            #external2 {
+                display: none;
+            }
+
+            #external1 {
+                width: 100%;
+            }
+        }
+
+        /* Header 2 styles */
+        .header2 {
+            margin: 0;
+        }
+
+        .col-md-6 {
+            padding: 0;
+        }
+
+        .col-md-6 img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Header 4 styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .row {
+            box-sizing: border-box;
+        }
+
+        .header4 {
+            background-image: url(./reservation-bg.jpg.webp);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 100%;
+        }
+
+        .col-12 {
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            margin-top: 10%;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            padding: 5%;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        input,
+        select {
+            width: 100%;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid #c27272;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        button {
+            border: 1px solid black;
+            width: 100%;
+            height: 50px;
+        }
+
+        /* Header 4 media queries */
+        @media (min-width: 576px) {
+            .col-md-5.offset-6 {
+                width: 50%;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .col-md-5.offset-6 {
+                width: 40%;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .col-md-5.offset-6 {
+                width: 30%;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .col-md-5.offset-6 {
+                width: 25%;
+            }
+        }
+
+        /* Other styles */
+        .head1 {
+            background-color: aqua;
+        }
+
+        .sidemenu {
+            background-color: chartreuse;
+            right: 0%;
+            height: 750px;
+            position: fixed;
+        }
+
+        .sidemenu>ul>li {
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        li:hover {
+            background-color: #fd4c4c;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #fd4c4c;
+            color: white;
+        }
+
+        #img {
+            width: 100%;
+        }
+
+        .header {
+            height: 700px;
+        }
+
+        /* Footer styles */
+        .footer-area {
+            background: url(./footer-bg.jpg.webp) center no-repeat;
+            background-size: cover;
+            z-index: 1;
+            padding: 100px 0;
+        }
+
+        /* Responsive styles for header */
+        @media (max-width: 767px) {
+            .header {
+                margin-top: 100px;
+            }
+
+            .header .col-lg-8 {
+                margin-top: 50px;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .header .col-lg-8 {
+                margin-top: 20px;
+            }
+        }
+
+        @media (min-width: 750px) {
+            .hamburger-icon {
+                display: none;
+            }
+        }
+
+
+        /* Sidemenu styles */
+        /* .sidemenu ul { display: none; } */
+        .hamburger-icon {
+            cursor: pointer;
+        }
+
+        .sidemenu ul li {
+            padding: 10px;
+        }
+
+        /* Menu CSS */
+        .col-md-2 {
+            display: block;
+        }
+
+        @media (max-width: 782px) {
+            .form-container {
+                width: 200px;
+                align-items: center;
+                text-align: center;
+            }
+            
+        }
+       
+
+    </style>
+</head>
+
+<body style="border: 5px solid black;">
+    <div class="container-fluid">
+        <div class="row main " style="height: auto; ">
+            <div class="col-md-10" id="external1">
+                <!-- header start -->
+                <div class="row header1" style="background-image: url(./home-banner.jpg.webp) ; border: 5px solid greenyellow;" >
+                    <div class="col-lg-8 offset-lg-4" style="background-color: rgb(255, 254, 254); margin-top: 200px; border: 5px solid green;">
+                        <div class="row" style="height: 500px; border: 5px solid red;">
+                            <div class="col-md-9" style="padding-top:100px ;padding-left:80px;">
+                                <div class="hamburger-icon">
+                                    <i class="fas fa-bars"> Menu</i>
+                                </div>
+                                <p>STEAK SHOP OFFERS BEST STEAK IN TOWN</p>
+                                <h1>Steak Shop offers the best steak in town</h1>
+                                <p>Inappropriate behavior is often laughed off as “boys will be boys,” women face higher
+                                    conduct standards, especially in the workplace. That’s why it’s crucial that, as
+                                    women.</p>
+                            </div>
+                            <div class="col-md-3" style="background-color:#ffff ; border: 5px solid blue; ">
+
+                                <button 
+                                    style="margin-top:20px; width:100%; font-size: large; border: 5px solid green;">Explore
+                                    Menu</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- header 2  start-->
+                <div class="row header2" style="padding: 5%;">
+                    <div class="col-md-6" style="background-color: rgb(255, 254, 254); padding: 5%;">
+                        <h1>Daily Food Courses <br> with Drinks</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div>
+                            <button class="btn btn-danger" style="padding: 15px;">See Full Menu</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6"
+                        style="background-image: url(./food1.jpg.webp); background-repeat: no-repeat; background-size: cover;">
+
+                        <div style="padding-top: 60%;">
+                            <img src="food2.png.webp" class="img-fluid" alt="Food Image">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- header 3 start -->
+                <div class="row header3" style="min-height: 800px; padding: 5%;">
+                    <div class="col-md-6"
+                        style="background-image: url(./food3.jpg.webp); background-repeat: no-repeat; background-size: cover;">
+                        <div style="margin-top: 40px;">
+                            <img src="food4.png.webp" class="img-fluid" alt="Food Image" style="margin-left: 60px;">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div style="padding: 5%; padding-top: 70px;">
+                            <h1>Daily Food Courses<br> with Drinks</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- header 4 -->
+
+                <div class="row header4" style="border: 5px solid green;">
+                    <div class="col-12">
+
+                        <div class="col-md-5 offset-5 form-container" style="border: 5px solid red;">
+                            <form>
+                                <div>
+                                    <h2>Reservation Form</h2>
+                                    <input type="text" placeholder="Name">
+                                    <input type="text" placeholder="Email Address">
+                                    <input type="text" placeholder="Phone Number">
+                                    <select placeholder="Number of People">
+                                        <option>Number of People</option>
+                                        <option>Four</option>
+                                        <option>Seven</option>
+                                        <option>Ten</option>
+                                    </select>
+                                    <input type="date" placeholder="Select Date and Time">
+                                    <select id="country" name="country">
+                                        <option value="none">None</option>
+                                        <option value="australia">Australia</option>
+                                        <option value="canada">Canada</option>
+                                        <option value="usa">USA</option>
+                                    </select>
+                                </div>
+                                <button>Make Reservation</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- header 5 -->
+
+                <div class="row" style="border: 5px solid green;">
+
+                    <div class="col-md-12">
+                        <div class="row header5">
+                            <div class="col-md-6"
+                                 style="background-color: green; background-image: url(./chef1.jpg\ \(1\).webp); background-size: cover;"></div>
+                            <div class="col-md-6" style="padding: 5%;">
+                                <h1>Daily Food Courses with Drinks</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                                <img src="./signature.png.webp" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="col-md-12" style="position: relative; top: 70%;">
+                        <div class="row">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-2"><img src="./item1.png.webp" class="img-fluid"></div>
+                            <div class="col-md-1"></div>
+                            <div class="col-md-2"><img src="./item2.png.webp" class="img-fluid"></div>
+                            <div class="col-md-1"></div>
+                            <div class="col-md-2"><img src="./item3.png.webp" class="img-fluid"></div>
+                            <div class="col-md-1"></div>
+                            <div class="col-md-2"><img src="./item4.png.webp" class="img-fluid"></div>
+                            <div class="col-md-1"></div>
+                        </div>
+                    </div>
+            
+                </div>
+                <!-- header 6 start  img slider -->
+                <div class="row" style="height: 400px;  border: 5px solid red; margin: 0px;">
+                    <div class="col-12">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                
+                                <div class="carousel-item active">
+                                    <div class="d-flex">
+                                        <img class="d-block w-100" src="./food5.jpg.webp" alt="First slide" style="height: 400px;">
+                                        <img class="d-block w-100" src="./food7.jpg.webp" alt="Second slide" style="height: 400px;">
+                                        <img class="d-block w-100" src="./food6.jpg.webp" alt="Third slide" style="height: 400px;">
+                                        <img class="d-block w-100" src="./food8.jpg.webp" alt="Fourth slide" style="height: 400px;">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-flex">
+                                        <img class="d-block w-100" src="./food8.jpg.webp" alt="Fifth slide" style="height: 400px;">
+                                        <img class="d-block w-100" src="./food6.jpg.webp" alt="Sixth slide" style="height: 400px;">
+                                        <img class="d-block w-100" src="./food7.jpg.webp" alt="Seventh slide" style="height: 400px;">
+                                        <img class="d-block w-100" src="./food5.jpg.webp" alt="Eighth slide" style="height: 400px;">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-flex">
+                                        <img class="d-block w-100" src="./food7.jpg.webp" alt="Ninth slide" style="height: 400px;">
+                                        <img class="d-block w-100" src="./food8.jpg.webp" alt="Tenth slide" style="height: 400px;">
+                                        <img class="d-block w-100" src="./food5.jpg.webp" alt="Eleventh slide" style="height: 400px;">
+                                        <img class="d-block w-100" src="./food6.jpg.webp" alt="Twelfth slide" style="height: 400px;">
+                                    </div>
+                                </div>
+                
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- slider end -->
+
+                <!-- header 7   start-->
+
+                <div class="row" height="300px" style="padding: 10%;">
+                    <div class="col-12" style="text-align: center;">
+
+                        <h1>In associasion with</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="row" style="height: 200px;">
+                    <div class="col-12" style="padding: 10px;">
+                        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <div class="d-flex  ">
+                                        <img class="d-block mx-auto" src="./logo.png.webp" alt="First slide"
+                                            style="max-height: 80px;">
+                                        <img class="d-block mx-auto" src="./logo1.png.webp" alt="First slide"
+                                            style="max-height: 80px;">
+                                        <img class="d-block mx-auto" src="./logo2.png.webp" alt="First slide"
+                                            style="max-height: 80px;">
+                                            <!-- <img class="d-block mx-auto" src="./logo1.png.webp" alt="First slide"
+                                            style="max-height: 80px;"> -->
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item active">
+                                    <div class="d-flex justify-content-around align-items-center">
+                                        <img class="d-block mx-auto" src="./logo3.png.webp" alt="Second slide"
+                                            style="max-height: 80px;">
+                                        <img class="d-block mx-auto" src="./logo4.png.webp" alt="Second slide"
+                                            style="max-height: 80px;">
+                                        <img class="d-block mx-auto" src="./logo5.png.webp" alt="Second slide"
+                                            style="max-height: 80px;">
+                                            <!-- <img class="d-block mx-auto" src="./logo3.png.webp" alt="Second slide"
+                                            style="max-height: 80px;"> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- header 7 end  -->
+
+                <!-- footer start  -->
+                <div style="background-image: url(./footer-bg.jpg.webp); height: auto;">
+                <div class="row"  style="height: 300px;">
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6>Top Products</h6>
+                            <ul class="list">
+                                <li><a href="#">Managed Website</a></li>
+                                <li><a href="#">Manage Reputation</a></li>
+                                <li><a href="#">Power Tools</a></li>
+                                <li><a href="#">Marketing Service</a></li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6>Quick Links</h6>
+                            <ul class="list">
+                                <li><a href="#">Jobs</a></li>
+                                <li><a href="#">Brand Assets</a></li>
+                                <li><a href="#">Investor Relations</a></li>
+                                <li><a href="#">Terms of Service</a></li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6>Features</h6>
+                            <ul class="list">
+                                <li><a href="#">Jobs</a></li>
+                                <li><a href="#">Brand Assets</a></li>
+                                <li><a href="#">Investor Relations</a></li>
+                                <li><a href="#">Terms of Service</a></li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6>Resources</h6>
+                            <ul class="list">
+                                <li><a href="#">Guides</a></li>
+                                <li><a href="#">Research</a></li>
+                                <li><a href="#">Experts</a></li>
+                                <li><a href="#">Agencies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="single-footer-widget">
+                            <h6>Newsletter</h6>
+                            <p>Stay update with our latest</p>
+                            <div id="mc_embed_signup">
+                                <form target="_blank" novalidate="true" action="your_form_action_url" method="get"
+                                    class="form-inline">
+                                    <div class="input-group">
+                                        <input class="form-control" name="EMAIL" placeholder="Your email address" required
+                                            type="email">
+                                        <div class="input-group-append">
+                                            <button class="click-btn btn btn-default" type="submit"><i
+                                                    class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                    <div style="position: absolute; left: -5000px;">
+                                        <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value type="text">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="row footer-bottom justify-content-between" style="height: 200px;">
+                    <div class="col-lg-6">
+                        <p class="footer-text m-0">
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                            template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
+                                href="https://colorlib.com" target="_blank">Colorlib</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="social-icons">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+                <!-- footer end -->
+
+
+
+
+                <!-- last div end -->
+            </div>
+
+            <!-- end work -->
+
+            <div class="col-sm-2   sidemenu " id="external2"
+            style="background-color: rgb(253, 253, 253); border: 0px solid red; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);">
+            <img src="./logo.png.webp" alt="logo" style="padding: 50px; " />
+
+            <div class="hamburger-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        
+
+            <ul
+                style="list-style-type: none; border: 0px solid black; padding: 0px; margin-left: auto; margin-right: auto;">
+                <li><i class="fas fa-home"></i> Home</li>
+                <li><i class="fas fa-user"></i> About</li>
+                <li><i class="fas fa-pager"></i> Menu</li>
+                <li><i class="fas fa-chair"></i> Book Table</li>
+                <li><i class="fas fa-cheese"></i> Chef</li>
+                <li><i class="fas fa-utensils"></i> Page</li>
+                <li><i class="fas fa-utensils"></i> Blog</li>
+                <li><i class="fas fa-address-book"></i> Contact</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        // Toggle the menu on clicking the hamburger icon
+        $(".hamburger-icon").click(function () {
+            $("#external2 ").toggle();
+        });
+    </script>
+</body>
+
+</html>

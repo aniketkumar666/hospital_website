@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .head1 {
+            background-color: aqua;
+        }
+
+        .sidemenu {
+            background-color: chartreuse;
+            right: 0%;
+            height: 750px;
+            position: fixed;
+
+        }
+
+        .sidemenu>ul>li {
+            padding: 10px;
+            font-size: 20px;
+            /* align-items: center; */
+
+        }
+
+        li:hover {
+            background-color: #fd4c4c;
+            color: white;
+            /* padding-left: -20px; */
+
+        }
+
+        button:hover {
+            background-color: #fd4c4c;
+            color: white;
+        }
+
+        #img {
+            width: 100%;
+        }
+
+        .header {
+            height: 700px;
+        }
+
+
+        .footer-area {
+    background: url(./footer-bg.jpg.webp) center no-repeat;
+    background-size: cover;
+    z-index: 1;
+    padding: 100px 0;
+ 
+    
+    
+    
+}
+    </style>
+</head>
+
+<body>
+    <div class="row main " style="height: auto; ">
+        <div class="col-md-10 ">
+            <!-- header start -->
+            <div class="row header" style="background-image: url(./home-banner.jpg.webp) ">
+                <div class="col-8 offset-4" style="background-color: rgb(255, 254, 254); margin-top: 200px;">
+                    <div class="row">
+                        <div class="col-md-9" style="padding-top:100px ;padding-left:80px ;">
+                            <p>STEAK SHOP OFFERS BEST STEAK IN TOWN</p>
+                            <h1>Steak Shop offers best steak in town</h1>
+                            <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher
+                                conduct standards especially in the workplace. That’s why it’s crucial that, as women.
+                            </p>
+                        </div>
+                        <div class="col-md-3" style="background-color:#ffff ; height: 700px;">
+                            <button
+                                style="margin-top:250px;margin-left:30px; width:120px;height: 100px; font-size: large;">explore
+                                <br><Br>menu </button>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- header 2  start-->
+            <div class="row header2 " style="padding: 5%;">
+                <div class="col-md-6" style="background-color: rgb(255, 254, 254); height: auto; padding: 10%;">
+                    <div>
+                        <h1>Daily Food Courses <br> with Drinks</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div>
+                            <button style="padding:15px;   border:1px solid rgb(250, 67, 67) ;">see full menu</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 " style="background-image: url(./food1.jpg.webp); background-repeat: no-repeat;">
+
+
+                    <div style="margin-top:60%;  margin-left: -150px;">
+                        <img src="food2.png.webp" width="550px" height="350px">
+                    </div>
+                </div>
+            </div>
+
+            <!-- header 3 start -->
+            <div class="row header3" style="height: 800px; padding: 5%;">
+                <div class="col-md-6" style="background-image: url(./food3.jpg.webp); background-repeat: no-repeat; ">
+                    <div style="margin-top: 40px;">
+                        <img src="food4.png.webp" width="550px" height="350px" style="margin-left:60px;">
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div style="padding: 5%; padding-top:70px; padding-left: 120px;">
+                        <h1>Daily Food Courses<br> with Drinks</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- header 4 -->
+
+            <div class="row header4">
+                <div class="col-12"
+                    style="background-image: url(./reservation-bg.jpg.webp);  height: auto; background-repeat: no-repeat; background-size: 100%; width: 100%;">
+
+                    <div class="col-md-5 offset-6"
+                        style="background-color: #ffffff; margin-top: 10%; margin-bottom: 0%; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);">
+                        <form style="padding: 5%;">
+                            <div>
+                                <h1 style="text-align: center;">reservation from</h1>
+                                <input type="text" placeholder="Name"
+                                    style=" outline: none; border: none; border-bottom: 1px solid #c27272;"><br><br>
+                                <input type="text" placeholder="Email Address"
+                                    style=" outline: none; border: none; border-bottom: 1px solid #c27272;"><br><br>
+                                <input type="text" placeholder="Phone Number"
+                                    style=" outline: none; border: none; border-bottom: 1px solid #c27272;"><br><br>
+                                <select style=" outline: none; border: none; border-bottom: 1px solid #c27272;"
+                                    placeholder="number of people">
+                                    <option>number of people</option>
+                                    <option>four</option>
+                                    <option>seven</option>
+                                    <option>ten</option>
+                                </select><br><br>
+                                <input type="date" placeholder="Select Date and time "
+                                    style=" outline: none; border: none; border-bottom: 1px solid #c27272;"><br><br>
+                                <select style=" outline: none; border: none; border-bottom: 1px solid #c27272;"
+                                    id="country" name="country">
+                                    <option value="australia">none</option>
+                                    <option value="australia">Australia</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="usa">USA</option>
+                                </select><br><br>
+
+
+                            </div>
+                            <button style="border:1px solid black; width: 250px;height: 50px; margin-left: 80px; ">Make
+                                reservation</button>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- header 5 -->
+
+            <div class="row" style="position: relative;">
+                <div class="col-12">
+                    <div class="row header5" style="height: 750px; padding: 2%;">
+                        <div class="col-md-6"
+                            style="background-color: green;  background-image: url(./chef1.jpg\ \(1\).webp);"></div>
+                        <div class="col-md-6" style="padding: 5%;">
+                            <h1>Daily Food Courses with Drinks</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation.</p>
+                            <img src="./signature.png.webp">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12" style="position: absolute; top: 70%; left: -80px; ">
+                    <div class="row">
+                        <div class="col-2"></div>
+                        <div class="col-1 "><img src="./item1.png.webp"></div>
+                        <div class="col-1"></div>
+                        <div class="col-1 "><img src="./item2.png.webp"></div>
+                        <div class="col-1"></div>
+                        <div class="col-1 "><img src="./item3.png.webp"></div>
+                        <div class="col-1"></div>
+                        <div class="col-1 "><img src="./item4.png.webp"></div>
+                        <div class="3"></div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- header 6 start  img slider -->
+            <div class="row" style="height: 600px;  padding-top: 10%;">
+                <div class="col-12">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active" style="border: 2px solid black; width: 10%;">
+                                <div style="display: flex;">
+                                    <img class="d-block w-10" src="./food5.jpg.webp" alt="First slide"
+                                        style="height: 400px;">
+                                    <img class="d-block w-10" src="./food7.jpg.webp" alt="First slide "
+                                        style="height: 400px;">
+                                    <img class="d-block w-10" src="./food6.jpg.webp" alt="First slide"
+                                        style="height: 400px;">
+                                    <img class="d-block w-10" src="./food8.jpg.webp" alt="First slide"
+                                        style="height: 400px;">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div style="display: flex;">
+                                    <img class="d-block w-10" src="./food8.jpg.webp" alt="Second slide"
+                                        style="height: 400px;">
+                                    <img class="d-block w-10" src="./food6.jpg.webp" alt="Second slide "
+                                        style="height: 400px;">
+                                    <img class="d-block w-10" src="./food7.jpg.webp" alt="Second slide"
+                                        style="height: 400px;">
+                                    <img class="d-block w-10" src="./food5.jpg.webp" alt="Second slide"
+                                        style="height: 400px;">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div style="display: flex;">
+                                    <img class="d-block w-10" src="./food7.jpg.webp" alt="Third slide"
+                                        style="height: 400px;">
+                                    <img class="d-block w-10" src="./food8.jpg.webp" alt="Third slide "
+                                        style="height: 400px;">
+                                    <img class="d-block w-10" src="./food5.jpg.webp" alt="Third slide"
+                                        style="height: 400px;">
+                                    <img class="d-block w-10" src="./food6.jpg.webp" alt="Third slide"
+                                        style="height: 400px;">
+                                </div>
+                            </div>
+
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <!-- slider end -->
+
+            <!-- header 7   start-->
+
+            <div class="row" height="300px" style="padding: 10%;">
+                <div class="col-12" style="text-align: center;">
+                    
+                    <h1>In associasion with</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            <div class="row" style="height: 200px; ">
+                <div class="col-12">
+                    <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item ">
+                                <div style="display: flex;" >
+                                    <img class="d-block w-20" src="./logo.png.webp" alt="First slide"
+                                        style="height: 100px; padding-left: 100px;">
+                                    <img class="d-block w-20" src="./logo1.png.webp" alt="First slide "
+                                        style="height: 100px;padding-left: 100px;">
+                                    <img class="d-block w-20" src="./logo2.png.webp" alt="First slide"
+                                        style="height: 100px;padding-left: 100px;">
+                                    <img class="d-block w-20" src="./logo3.png (1).webp" alt="First slide"
+                                        style="height: 100px;padding-left: 100px;">
+                                </div>
+                            </div>
+                            <div class="carousel-item active">
+                                <div style="display: flex;">
+                                    <img class="d-block w-20" src="./logo3.png.webp" alt="Second slide"
+                                        style="height: 100px;padding-left: 70px;">
+                                    <img class="d-block w-20" src="./logo4.png.webp" alt="Second slide"
+                                        style="height: 100px;padding-left: 70px;">
+                                    <img class="d-block w-20" src="./logo5.png.webp" alt="Second slide"
+                                        style="height: 100px;padding-left: 70px;">
+                                    <img class="d-block w-20" src="./logo2.png.webp" alt="Second slide"
+                                        style="height: 100px; padding-left: 70px;">
+                                </div>
+                            </div>
+                          
+
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExample" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExample" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+           <!-- header 7 end  -->
+
+           <!-- footer start  -->
+           <footer class="footer-area overlay" style=" height: 400px;">
+            <div class="container">
+            <div class="row"  >
+            <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="single-footer-widget">
+            <h6>Top Products</h6>
+            <div class="row">
+            <div class="col">
+            <ul class="list">
+            <li><a href="#">Managed Website</a></li>
+            <li><a href="#">Manage Reputation</a></li>
+            <li><a href="#">Power Tools</a></li>
+            <li><a href="#">Marketing Service</a></li>
+            </ul>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="single-footer-widget">
+            <h6>Quick Links</h6>
+            <div class="row">
+            <div class="col">
+            <ul class="list">
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Brand Assets</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            </ul>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="single-footer-widget">
+            <h6>Features</h6>
+            <div class="row">
+            <div class="col">
+            <ul class="list">
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Brand Assets</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            </ul>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="single-footer-widget">
+            <h6>Resources</h6>
+            <div class="row">
+            <div class="col">
+            <ul class="list">
+            <li><a href="#">Guides</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="#">Experts</a></li>
+            <li><a href="#">Agencies</a></li>
+            </ul>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-8">
+            <div class="single-footer-widget">
+            <h6>Newsletter</h6>
+            <p>Stay update with our latest</p>
+            <div class id="mc_embed_signup">
+            <form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
+            <div class="d-flex flex-row">
+            <input class="form-control" name="EMAIL" placeholder="Your email address" onfocus="this.placeholder = 'Your email address'" onblur="this.placeholder = 'Your email address'" required type="email">
+            <button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+            <div style="position: absolute; left: -5000px;">
+            <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value type="text">
+            </div>
+            </div>
+            <div class="info"></div>
+            </form>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="row footer-bottom justify-content-between">
+            <div class="col-lg-6">
+            <p class="footer-text m-0">
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            </p>
+            </div>
+            <div class="col-lg-2">
+            <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-dribbble"></i></a>
+            <a href="#"><i class="fa fa-behance"></i></a>
+            </div>
+            </div>
+            </div>
+            </div>
+            </footer>
+
+           <!-- footer end -->
+
+            
+
+
+            <!-- last div end -->
+        </div>
+
+        <!-- end work -->
+
+        <div class="col-md-2 sidemenu" style="background-color: rgb(253, 253, 253); border: 0px solid red; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);">
+
+            <img src="./logo.png.webp" alt="logo" style="padding: 50px; " />
+
+            <ul
+                style="list-style-type: none; border: 0px solid black; padding: 0px; margin-left: auto; margin-right: auto;">
+                <li><i class="fa-solid fa-house"></i> Home</li>
+                <li><i class="fa-solid fa-person"></i> About</li>
+                <li><i class="fa-solid fa-pager"></i> Menu</li>
+                <li><i class="fa-solid fa-chair"></i> Book Table</li>
+                <li><i class="fa-solid fa-cheese"></i> Chef</li>
+                <li><i class="fa-solid fa-utensils"></i> Page</li>
+                <li><i class="fa-solid fa-plate-wheat"></i> Blog</li>
+                <li><i class="fa-solid fa-address-book"></i> Contact</li>
+            </ul>
+
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
